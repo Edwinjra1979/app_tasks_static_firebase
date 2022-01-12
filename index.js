@@ -82,6 +82,7 @@ taskForm.addEventListener('submit', e => {
     }else{
         let data = {title, description}
         updateTask(id, data);
+        taskForm['task-save-btn'].innerHTML = 'Save'
         editStatus = false;
     }
     
